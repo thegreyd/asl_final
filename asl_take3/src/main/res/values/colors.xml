@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_crayola">#1F75FE</color>
+    <color name="anti_flash_white">#F2F3F4</color>
+    <color name="white">#FFF</color>
+    <color name="buff">#F0DC82</color>
+    <color name="antiquewhite">#B9F2FF</color>
+    <color name="aero">#7CB9E8</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0247FE</color>
+    <color name="black">#000</color>
+</resources>

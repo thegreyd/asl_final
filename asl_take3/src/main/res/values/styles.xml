@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle" tools:targetApi="11">@style/MyActionBar</item>
+        <!--Support Library compatibility-->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextStyle" tools:targetApi="11">@style/MyActionBarTitleTheme</item>
+        <item name="android:background">@color/blue</item>
+        <!--Support Library compatibility-->
+        <item name="background">@color/blue</item>
+        <item name="titleTextStyle">@style/MyActionBarTitleTheme</item>
+
+    </style>
+
+    <style name="MyActionBarTitleTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/version_title"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:background="@color/buff"/>
+
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/version"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/author_title"
+            android:textStyle="bold"
+            android:background="@color/buff"
+            android:textSize="15sp"
+            android:textAllCaps="true"/>
+
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/author"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:autoLink="email"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/contributors_title"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@color/buff"
+            android:textAllCaps="true"/>
+
+    </TableRow>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/contributors"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"/>
+
+
+    </TableRow>
+
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/feedback_title"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@color/buff"
+                android:textAllCaps="true"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/feedback"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:autoLink="email"/>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/projectsource_title"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@color/buff"
+                android:textAllCaps="true"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/projectsource"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:autoLink="web"/>
+        </TableRow>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
