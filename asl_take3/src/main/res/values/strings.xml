@@ -4,7 +4,7 @@
 
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-
+    <string name="app_name_short">ASL</string>
     <string name="app_name">AcropolisStudentLog</string>
     <string name="title_section1">TIMETABLE</string>
     <string name="title_section2">SUBJECTS</string>
@@ -78,14 +78,18 @@
     <string name="author_title">author</string>
     <string name="author">Siddharth Sharma\n\nCS3 2yr.\nsid.sharma0@gmail.com</string>
     <string name="contributors_title">contributors</string>
-    <string name="contributors">Vinay Pawar CS3 2yr\n\nAbhilash Mishra IT 3yr\n\nSiddharth Yadav CS3 2yr(App Icon)</string>
+    <string name="contributors">Vinay Pawar CS3 2nd yr\n\nAbhilash Mishra IT 3rd yr\n\nSiddharth Yadav CS3 2nd yr(App Icon)</string>
 
     <string name="projectsource_title">projectsource</string>
     <string name="projectsource">Full source at github.com/thegreyd/asl_final\nThis Project is completely Open Source and uses openly available libraries (SQLiteAssetHelper).\n
-    The information used here is publically available through rgpv.ac.in and others.\n
+    The information used here is publicly available, through rgpv.ac.in and others.\n
         </string>
     <string name="feedback_title">feedback / suggestions / bugs</string>
     <string name="feedback">Your feedback is important!\nGive it at sid.sharma0@gmail.com</string>
+
+    <string name="update_title">update</string>
+    <string name="update">Check for update\nhttp://thegreyd.github.io/final_ASL</string>
+
 
 
 

@@ -4,6 +4,7 @@ package com.sid.asl_take3;
  * Created by Siddharth on 2/9/14.
  */
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -33,9 +34,19 @@ public class nav_fragments extends Fragment {
     private Database_Helper db;
     private View simpleFragmentView;
     private WebView wv;
-    private int id;
-    private SharedPreferences sharedPrefs;
-    private SharedPreferences.Editor editor;
+    private int id,sub_id,class_id;
+
+    public void onStop(){
+        super.onStop();
+        saveData();
+    }
+
+    public void saveData(){
+        SharedPreferences.Editor outState = getActivity().getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE).edit();
+        outState.putInt("selected_subject", sub_id);
+        outState.putInt("selected_class", class_id);
+        outState.commit();
+    }
 
     public static nav_fragments newInstance(int sectionNumber) {
         nav_fragments fragment = new nav_fragments();
@@ -50,6 +61,11 @@ public class nav_fragments extends Fragment {
 
     public void onStart(){
         super.onStart();
+
+        SharedPreferences orderData = getActivity().getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        class_id = orderData.getInt("selected_class", 2);
+        sub_id = orderData.getInt("selected_subject", 0);
+
         switch (id){
             case 0:
                 initialize_timetable();
@@ -83,9 +99,11 @@ public class nav_fragments extends Fragment {
     public void initialize_subjects(){
         initialize_subjects_Views();
         instantiate_subjects_spinners();
+        setDefaultSub();
+    }
 
-        sharedPrefs = getActivity().getSharedPreferences(getString(R.string.preference_file_key), 0);
-        subjectSpinner.setSelection(sharedPrefs.getInt("selected_subject", 0));
+    private void setDefaultSub(){
+        subjectSpinner.setSelection(sub_id);
     }
 
     private void initialize_subjects_Views(){
@@ -99,14 +117,13 @@ public class nav_fragments extends Fragment {
         subjectSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                displaywebpage(subjectSpinner.getSelectedItemPosition());
-                editor = getActivity().getSharedPreferences(getString(R.string.preference_file_key),0).edit();
-                editor.putInt("subject_selected", subjectSpinner.getSelectedItemPosition());
+                sub_id=subjectSpinner.getSelectedItemPosition();
+                displaywebpage(sub_id);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                subjectSpinner.setSelection(sub_id);
             }
         });
     }
@@ -146,8 +163,6 @@ public class nav_fragments extends Fragment {
         db_operation();
         instantiate_spinners();
         setGuideListener();
-        sharedPrefs = getActivity().getSharedPreferences(getString(R.string.preference_file_key), 0);
-        classSpinner.setSelection(sharedPrefs.getInt("selected_class", 2));
     }
 
     private void setGuideListener(){
@@ -185,7 +200,12 @@ public class nav_fragments extends Fragment {
 
     private void instantiate_spinners(){
         addItemSelectedListenerToSpinner();
+        setDefaultClass();
         setDefaultDay();
+    }
+
+    private void setDefaultClass(){
+        classSpinner.setSelection(class_id);
     }
 
     private void addItemSelectedListenerToSpinner(){
@@ -194,17 +214,15 @@ public class nav_fragments extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 class_index=classSpinner.getSelectedItemPosition();
+                class_id=(int)class_index;
                 day=daySpinner.getSelectedItem().toString();
                 timetable_cursor = db.getTimetableByDay(class_index,day);
                 changeText();
-
-                editor = getActivity().getSharedPreferences(getString(R.string.preference_file_key),0).edit();
-                editor.putInt("class_selected", classSpinner.getSelectedItemPosition());
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                classSpinner.setSelection(class_id);
             }
         });
 

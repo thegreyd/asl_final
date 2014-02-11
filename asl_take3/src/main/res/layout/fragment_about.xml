@@ -15,32 +15,7 @@
 
 
 
-    <TableRow android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView
-            android:paddingLeft="10dp"
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="@string/version_title"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:textAllCaps="true"
-            android:background="@color/buff"/>
 
-    </TableRow>
-    <TableRow android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:text="@string/version"
-            android:paddingLeft="20dp"
-            android:textSize="20sp"/>
-    </TableRow>
 
     <TableRow android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,6 +74,61 @@
 
 
     </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/version_title"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:background="@color/buff"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/version"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/update_title"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:background="@color/buff"/>
+
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/update"
+                android:autoLink="web"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"/>
+        </TableRow>
 
 
         <TableRow android:layout_width="match_parent"
