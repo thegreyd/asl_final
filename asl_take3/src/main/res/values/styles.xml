@@ -9,7 +9,7 @@
 
     <!-- ActionBar styles -->
     <style name="MyActionBar"
-        parent="@style/Widget.AppCompat.Light.ActionBar">
+        parent="Widget.AppCompat.Light.ActionBar">
         <item name="android:titleTextStyle" tools:targetApi="11">@style/MyActionBarTitleTheme</item>
         <item name="android:background">@color/blue</item>
         <!--Support Library compatibility-->
@@ -23,7 +23,7 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="NoActionBar" parent="Theme.AppCompat.Light">
+    <style name="NoActionBar" parent="@style/Theme.AppCompat.Light">
         <item name="android:windowNoTitle">true</item>
     </style>
 

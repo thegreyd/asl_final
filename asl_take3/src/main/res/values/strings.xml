@@ -22,12 +22,12 @@
     </string-array>
 
     <string-array name="classes">
-        <item>CS1</item>
-        <item>CS2</item>
+        <item>CS-1 2nd yr</item>
+        <item>CS-2 2nd yr</item>
         <item>@string/class_cs3</item>
     </string-array>
 
-    <string name="class_cs3">CS3</string>
+    <string name="class_cs3">CS-3 2nd yr</string>
 
 
     <string name="period1">period1</string>
@@ -74,21 +74,21 @@
     <string name="timetable_settings">TIMETABLE SETTINGS</string>
 
     <string name="version_title">version</string>
-    <string name="version">1.3</string>
+    <string name="version">1.4.1</string>
     <string name="author_title">author</string>
-    <string name="author">Siddharth Sharma\n\nCS3 2yr.\nsid.sharma0@gmail.com</string>
+    <string name="author">Siddharth Sharma\nAITR\nCS-3 2ndyr.</string>
     <string name="contributors_title">contributors</string>
-    <string name="contributors">Vinay Pawar CS3 2nd yr\n\nAbhilash Mishra IT 3rd yr\n\nSiddharth Yadav CS3 2nd yr(App Icon)</string>
+    <string name="contributors">Vinay Pawar CS-3 2nd yr\n\nAbhilash Mishra IT 3rd yr\n\nSiddharth Yadav CS-3 2nd yr(App Icon)</string>
 
     <string name="projectsource_title">projectsource</string>
-    <string name="projectsource">Full source at github.com/thegreyd/asl_final\nThis Project is completely Open Source and uses openly available libraries (SQLiteAssetHelper).\n
+    <string name="projectsource">Full source at github.com/thegreyd/asl_final\n\nThis Project is completely Open Source and uses openly available libraries (SQLiteAssetHelper).\n
     The information used here is publicly available, through rgpv.ac.in and others.\n
         </string>
     <string name="feedback_title">feedback / suggestions / bugs</string>
     <string name="feedback">Your feedback is important!\nGive it at sid.sharma0@gmail.com</string>
 
     <string name="update_title">update</string>
-    <string name="update">Check for update\nhttp://thegreyd.github.io/final_ASL</string>
+    <string name="update">Check for update at the project source link below.</string>
 
 
 
