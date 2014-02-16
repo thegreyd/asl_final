@@ -278,6 +278,7 @@
                     android:layout_weight="1"
                     android:id="@+id/guide1"
                     android:visibility="gone"
+                    android:padding="5dp"
                     android:text="@string/guide1"/>
 
             </TableRow>
