@@ -16,6 +16,7 @@ import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -100,6 +101,11 @@ public class nav_fragments extends Fragment {
         initialize_subjects_Views();
         instantiate_subjects_spinners();
         setDefaultSub();
+        //showZoomHint();
+    }
+
+    private void showZoomHint(){
+        Toast.makeText(getActivity(), R.string.showzoom_hint, Toast.LENGTH_LONG).show();
     }
 
     private void setDefaultSub(){
@@ -111,6 +117,8 @@ public class nav_fragments extends Fragment {
         wv = (WebView) getView().findViewById(R.id.webview);
         wv.getSettings().setLoadWithOverviewMode(true);
         wv.getSettings().setUseWideViewPort(true);
+        wv.getSettings().setBuiltInZoomControls(true);
+        wv.getSettings().setSupportZoom(true);
      }
 
     private void instantiate_subjects_spinners(){
@@ -174,6 +182,8 @@ public class nav_fragments extends Fragment {
                 expand=!expand;
                 i=expand?View.VISIBLE:View.GONE;
                 guide1.setVisibility(i);
+                if(expand)
+                    Toast.makeText(getActivity(), R.string.showguide_hint, Toast.LENGTH_LONG).show();
             }
         });
     }
