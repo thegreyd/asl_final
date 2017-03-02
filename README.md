@@ -3,13 +3,4 @@ asl_final
 
 Final version of ASL. Android app that displays timetable from sqlite database, in a nice layout. And subjects also shown in web-view. Navigation mode is by navigation drawer. Used SQLiteAssetHelper.
 
-DOWNLOADS:
- 
- asl 1.4.3 https://drive.google.com/uc?export=download&id=0B6Sp52RJ5IKpMXBoY0s0R2hxc3c
- 
- asl 1.4.2 https://drive.google.com/uc?export=download&id=0B6Sp52RJ5IKpeGtLaWhaUnUxY2M
- 
- asl 1.4.1 https://drive.google.com/uc?export=download&id=0B6Sp52RJ5IKpYXZnT3VVYzJ2SFk
- 
-
-
+[Downloads](https://github.com/thegreyd/asl_final/releases)
